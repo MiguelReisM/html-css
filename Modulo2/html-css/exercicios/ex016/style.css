@@ -1,0 +1,40 @@
+@charset "UTF-8";
+
+/* Color Theme Swatches in Hex */
+.Guide-1-hex { color: #215BA6; }
+.Guide-2-hex { color: #23A5D9; }
+.Guide-3-hex { color: #05DBF2; }
+.Guide-4-hex { color: #BF0404; }
+.Guide-5-hex { color: #191C1D; }
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    /* height: 100%; */
+}
+
+body{
+    background-image: linear-gradient(to right, #215BA6, #23A5D9, #05DBF2);
+}
+
+main{
+    background-color: white;
+    border-radius: 10px;                    /* Tamanho delimetado em pixels para arredonadamento dos cantos do fundo do texto */
+    box-shadow: 5px 5px 15px #153b6d88;   /* Tamanho delimetado em pixels para o sombreamento do fundo de texto sendo respectivamente para o lado, para baixo e quão espalhada */
+    width: 600px;                           /* Tamanho delimetado em pixels para o fundo do texto */
+    padding: 10px;                          /* Tamanho delimetado em pixels para a borad entre o fundo da página e do tetxo */
+    margin: auto;                           /* Tamanho delimetado em pixels para centralizar de forma responsiva */
+}
+
+h1{
+    color: #191C1D;
+    text-align: center;
+    text-shadow: 1px 1px 2px #030303a8;
+}
+
+h2{
+    color: #BF0404;
+}
+
+p{
+    text-align: justify;
+}
