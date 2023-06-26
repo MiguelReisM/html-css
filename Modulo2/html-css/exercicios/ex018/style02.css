@@ -1,0 +1,24 @@
+@charset "UTF-8";
+@font-face {
+    font-family: 'MortifiedDrip';
+    src: url('fonts/MortifiedDrip.ttf') format('truetype');
+    /* Tipos de format 
+        - opentype (otf)
+        - truetype (ttf)
+        - embedded-opentype
+        - truetype-aat (Apple Advanced Typography)
+        - svg
+    */
+    font-weight: normal;
+    font-style: normal;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1{
+    font-family: 'MortifiedDrip', Times, serif;
+    font-size: 5em;
+    font-weight: normal;
+}
