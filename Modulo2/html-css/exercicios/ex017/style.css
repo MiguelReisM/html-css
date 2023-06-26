@@ -10,8 +10,28 @@ body{
     em, ex, rem, vw, vh, %
 
     16px geralmente = 1em
-
-    Recomendação da W3C "px & em" !
+    Recomendação da W3C "px & em" ! 
     */
     font-size: 1em ;
+    /* 
+    font-weight: bolder;
+        lighter, normal, bold, bolder, 100-900.
+    font-style: italic;
+    text-decoration: underline;
+    */
+}
+
+h1{
+    font: italic bold 3em 'Courier New', Courier, monospace;
+    /* shorthand font
+    font-style -> font-weight -> font-size -> font-family
+
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bolder;
+    font-size: 3em;
+    font-style: italic;*/
+}
+
+h2{
+    font: bold 2em 'Courier New', Courier, monospace;
 }
