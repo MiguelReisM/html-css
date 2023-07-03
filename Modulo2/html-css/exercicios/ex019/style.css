@@ -27,3 +27,22 @@ h2{
 p{
     text-align: justify;
 }
+
+.basico{
+    color: rgba(20, 129, 6, 0.74);
+    font-weight: bold;
+}
+
+.intermediario{
+    color: rgba(163, 160, 6, 0.74);
+    font-weight: bold;
+}
+
+.avancado{
+    color: rgba(158, 6, 6, 0.74);
+    font-weight: bold;
+}
+
+.destaque{
+    background-color: rgba(202, 202, 122, 0.329);
+}
