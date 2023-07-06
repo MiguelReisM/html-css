@@ -1,7 +1,9 @@
 @charset "UTF-8";
 
+/* Adiciona uma fonte direto da web */
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 
+/* Adicionando a fonte dentro dos arquivos e nomeando como Android, atente-se aos formatos! */
 @font-face {
     font-family: 'Android';
     src: url('../fontes/IDroid.otf') format('opentype');
@@ -10,6 +12,7 @@
 
 :root {
     /* variaveis de cores */
+    --cor-1: #73db7863;
     --cor0: #73DB79;
     --cor1: #34C23B;
     --cor2: #278F2C;
@@ -34,6 +37,11 @@ body {
     background-color: #73db7863;
 }
 
+/* Configuração de indicadores de links extrenos */
+a.externo::after {
+    content: '\00A0\1F517';
+}
+
 /* configuração de cabeçalho com tamanho min e gradiente */
 header {
     background-image: linear-gradient(to bottom, var(--cor1), var(--cor4));
@@ -47,6 +55,7 @@ header > h1 {
     font-family: var(--fonte-destaque);
     font-size: 3em;
     color: white;
+    font-weight: normal;
     margin-bottom: 20px;
     text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.367);
 }
@@ -100,6 +109,8 @@ main{
 main h1 {
     font-family: var(--fonte-android);
     color: var(--cor4);
+    font-weight: normal;
+    font-size: 1.8em;
 }
 
 /* configuração do h2 dentro do main (conteudo principal) */
@@ -107,6 +118,7 @@ main h2 {
     background-image: linear-gradient(to right, var(--cor0), transparent);
     font-family: var(--fonte-android);
     color: var(--cor3);
+    font-weight: normal;
     font-size: 1.3em;
     text-indent: 10px;
 }
@@ -153,9 +165,48 @@ main img.pequena {
     margin: auto;
 }
 
-/* configuração do roda pé do site */
+/* configuração do conteudo extra do site (estilo) dentro do main (conteudo principal) */
+main aside {
+    background-color: var(--cor-1);
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.267);
+}
+
+/* configuração do h3 no conteudo extra do site dentro do main (conteudo principal) */
+main aside > h3 {
+    background-color: var(--cor3);
+    color: white;
+    padding: 5px 5px 5px 10px;
+    margin: -10px -10px 0px -10px;
+    border-radius: 10px 10px 0px 0px;
+}
+
+/* configuração do ul (lista) no conteudo extra do site dentro do main (conteudo principal) */
+main aside > ul {
+    list-style-type: '\2714\00A0';
+    list-style-position: inside;
+    columns: 2;
+}
+
+/* configuração do rodapé do site */
 footer {
     background-color: var(--cor4);
     color: white;
     text-align: center;
+    font-size: 0.8em;
+    padding: 5px;
+}
+
+/* configuração do link no rodapé do site */
+footer a {
+    color: white;
+    font-weight: bolder;
+    text-decoration: none;
+}
+
+/* configuração do link quando se passa o mouse sobre no rodapé do site */
+footer a:hover {
+    color: var(--cor0);
+    text-decoration: underline;
 }
