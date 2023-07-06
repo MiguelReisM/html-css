@@ -68,6 +68,7 @@ header > p {
     max-width: 500px;
     padding: 0px 10px 0px 10px;
     margin: auto;
+    margin-bottom: 30px;
     text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.367);
 }
 
@@ -163,6 +164,22 @@ main img.pequena {
     max-width: 350px;
     display: block;
     margin: auto;
+}
+
+div.video {
+    background-color: var(--cor4);
+    margin: 0px -20px 30px -20px;
+    padding: 20px;
+    padding-bottom: 56.5%;
+    position: relative;
+}
+
+div.video > iframe {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
 }
 
 /* configuração do conteudo extra do site (estilo) dentro do main (conteudo principal) */
