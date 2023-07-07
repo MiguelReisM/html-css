@@ -68,7 +68,6 @@ header > p {
     max-width: 500px;
     padding: 0px 10px 0px 10px;
     margin: auto;
-    margin-bottom: 30px;
     text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.367);
 }
 
@@ -82,7 +81,7 @@ nav {
 /* configuração de links no header*/
 nav > a {
     color: white;
-    padding: 10px;
+    padding: 5px;
     text-decoration: none;
     font-weight: bold;
     transition-duration: 0.5s;
