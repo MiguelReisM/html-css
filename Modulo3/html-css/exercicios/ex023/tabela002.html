@@ -7,6 +7,7 @@
     <style>
         body {
             font-family: Arial, Helvetica, sans-serif;
+            background-color: rgba(250, 235, 215, 0.432);
         }
 
         table {
@@ -30,6 +31,14 @@
         thead, tfoot {
             background-color: darkslategray;
             color: white;
+        }
+
+        tbody > tr:nth-child(2n-1) {
+            background-color: white;
+        }
+
+        tbody > tr:nth-child(2n) {
+            background-color: lightgray;
         }
 
         td.num {
