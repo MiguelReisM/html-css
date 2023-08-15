@@ -54,25 +54,26 @@ header > p {
 }
 
 main {
-    padding: 20px;
-    color: var(--color5);
+    color: var(--color_white);
     text-justify: auto;
     text-align: center;
     background-color: var(--color5);
 }
 
-main > p {
-    color: var(--color_black);
-    text-justify: auto;
-    text-align: left;
-    padding: 20px;
-    border-radius: 15px;
-    background-color: var(--color_white);
-    margin: 1px;
+main > section > a {
+    text-decoration: underline;
+    color: var(--color_white);
+}
+
+main > section > a:hover {
+    text-decoration: underline;
+    color: var(--color1);
 }
 
 footer {
     width: auto;
     height: 20px;
     background-color: var(--color2);
+    color: white;
+    text-align: center;
 }
